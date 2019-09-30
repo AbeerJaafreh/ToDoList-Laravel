@@ -31,17 +31,10 @@
             @endforeach
 
 
-        {{--@foreach($tasks as $index=>$task)--}}
-        {{--<tr>--}}
-            {{--<td>{{$index+1}}</td>--}}
-            {{--<td>{{$task->task}}</td>--}}
-            {{--<td>--}}
-                {{--<button class="btn btn-primary btn-sm">Edit</button>--}}
-            {{--</td>--}}
-        {{--</tr>--}}
-            {{--@endforeach--}}
 
         </tbody>
     </table>
+    <a href="{{route('tasks.create')}}" class="btn btn-outline-dark">Back</a>
+
 
 @endsection
