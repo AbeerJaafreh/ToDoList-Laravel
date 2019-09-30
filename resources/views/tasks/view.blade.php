@@ -21,11 +21,7 @@
                         <input type="submit" class="btn btn-danger btn-sm" value="Delete">
                     </form>
 
-                    <form action="{{route('tasks.update',$task->id)}}" method="POST">
-                        @csrf
-                        @method('PUT')
-                        <button type="submit" class="btn btn-primary btn-sm" value="Edit">Edit</button>
-                    </form>
+                    <a href="{{route('tasks.edit',$task->id)}}" class="btn btn-primary">Edit</a>
 
 
 
